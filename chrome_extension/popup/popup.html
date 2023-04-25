@@ -17,10 +17,15 @@
     </head>
     <body>
         <h1>Entitlement to Receive Checker</h1>
-        <input type="search" id="search_bar" name="search" value="" placeholder="Enter postcode/ town/ reg." />
-        <input type="radio" id="pharmacy" name="location" value="pharmacy" class="location" checked />Pharmacy
+        <div class="search_element">
+            <input type="search" id="search_bar" name="search" value="" placeholder="Enter postcode/ town/ reg." >
+            <button type="submit" id="submit">Search</button>
+        </div>
+        <input type="radio" id="pharmacy" name="location" value="pharmacy" class="location" checked />
+        <label for="pharmacy">Pharmacy</label>
         <input type="radio" id="gp" name="location" value="gp" class="location"/>GMC
-        <button type="submit" id="submit">Search</button>
+        <label for="gp">GP</label>
+        
    
         
         <script src="../service-worker.js"></script>

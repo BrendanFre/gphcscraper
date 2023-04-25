@@ -9,7 +9,7 @@ var gmc_search = "https://www.gmc-uk.org/doctors?text="
 
 
 gp_radio.addEventListener("click", ()=>{
-    search_box.placeholder = "Input DR's name."
+    search_box.placeholder = "Enter Dr's name."
 })
 
 pharmacy_radio.addEventListener("click", ()=>{
