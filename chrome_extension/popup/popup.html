@@ -10,19 +10,19 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="popup.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1>Entitlement to Receive Checker</h1>
-        <input type="search" id="search" name="search" />
-        <input type="radio" id="pharmacy" name="pharmacy" />Pharmacy
-        <input type="radio" id="GP" name="GP" />GMC
-        <button>Search</button>
+        <input type="search" id="search_bar" name="search" value="" placeholder="Enter postcode/ town/ reg." />
+        <input type="radio" id="pharmacy" name="location" value="pharmacy" class="location" checked />Pharmacy
+        <input type="radio" id="gp" name="location" value="gp" class="location"/>GMC
+        <button type="submit" id="submit">Search</button>
    
         
-        <script src="/popup.css" async defer></script>
+        <script src="../service-worker.js"></script>
     </body>
 </html>
