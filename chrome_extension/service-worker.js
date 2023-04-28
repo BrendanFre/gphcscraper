@@ -24,13 +24,13 @@ button.addEventListener("click", ()=>{
             }
         }
     }
-    var search_input = document.getElementById("search_bar").value
+    var search_input = String(document.getElementById("search_bar").value)
     //console.log("button pressed " + location_type)
     //console.log("search query: " + search_input)
 
     if(location_type == "pharmacy"){
-        console.log("length of location")
-        if(!isNan(search_input)){
+        console.log("length of location", search_input.length)
+        if(!isNaN(search_input)){
             var website = "https://www.pharmacyregulation.org/registers/pharmacy/registrationnumber/" + search_input
 
         } else{
