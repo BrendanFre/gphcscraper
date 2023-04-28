@@ -30,7 +30,7 @@ button.addEventListener("click", ()=>{
 
     if(location_type == "pharmacy"){
         console.log("length of location")
-        if(search_input.length == 7){
+        if(!isNan(search_input)){
             var website = "https://www.pharmacyregulation.org/registers/pharmacy/registrationnumber/" + search_input
 
         } else{

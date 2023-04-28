@@ -16,18 +16,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Entitlement to Receive Checker</h1>
-        <div class="search_element">
+        <div id="top_bar">
+            <h1>Entitlement to Receive Checker</h1>
+        </div>
+        <form>
+        <div id="search_element">
             <input type="search" id="search_bar" name="search" value="" placeholder="Enter postcode/ town/ reg." >
             <button type="submit" id="submit">Search</button>
         </div>
+        <div id = "radio_buttons">
         <input type="radio" id="pharmacy" name="location" value="pharmacy" class="location" checked />
         <label for="pharmacy">Pharmacy</label>
         <input type="radio" id="gp" name="location" value="gp" class="location"/>GMC
         <label for="gp">GP</label>
-        
-   
-        
+        <input type="radio" id="wholesaler" name="location" disabled>
+        <label for="wholesaler">Wholesaler</label>
+    </div>
+    </form>
         <script src="../service-worker.js"></script>
     </body>
 </html>
