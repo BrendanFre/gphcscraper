@@ -14,7 +14,7 @@
     "description" : "A tool to check if a location can have pharmaceutical products in the UK.",
 
     "author" : "bfreeman0@gmail.com",
-    "permissions" : ["tabs", "activeTab"],
+    "permissions" : ["tabs"],
     "host_permissions": [
         "http://*/*",
         "https://*/*"
