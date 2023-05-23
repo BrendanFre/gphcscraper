@@ -14,11 +14,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+		
     </head>
     <body>
-        <div id="top_bar">
-            <h1>Entitlement to Receive Checker</h1>
-        </div>
+		<header><h1>Entitlement to Receive Checker</h1></header>
         <form>
         <div id="search_element">
             <input type="search" id="search_bar" name="search" value="" placeholder="Enter postcode/town/reg." >
@@ -29,12 +28,23 @@
 			<label for="pharmacy">Pharmacy</label>
 			<input type="radio" id="gp" name="location" value="gp" class="location"/>GMC
 			<label for="gp">GP</label>
-		</div>
-		<div id = "help">
-			Any issues? <a href = "https://github.com/McBean29/gphcscraper/issues" target="_blank" rel="noopener noreferrer">please click here.</a>
+		
+		
+			<h2>GP - Validation Websites</h2>
+			<input type="radio" id="gp_england" name="location" value="gp_england" class="location" />
+			<label for="gp_england">England</label>
+			<input type="radio" id="gp_wales" name="location" value="gp_wales" class="location"/>
+			<label for="gp_wales">Wales</label>
+			<input type="radio" id="gp_scotland" name="location" value="gp_scotland" class="location"/>
+			<label for="gp_scotland">Scotland</label>
+		
+
 		</div>
     </form>
 
     <script src="../service-worker.js"></script>
     </body>
+	<footer>
+			Any issues? <a href = "https://github.com/McBean29/gphcscraper/issues" target="_blank" rel="noopener noreferrer">please click here.</a>
+	</footer>
 </html>

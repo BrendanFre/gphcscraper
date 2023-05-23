@@ -4,28 +4,60 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: small;
+    text-align: left;
+}
+
 body{
     font-family: Verdana, Geneva, sans-serif;
-    width: 250px;
-    height: 50x;
+    width: 275px;
+    height: 125px;
     background-color: #86B59E;
-    color: #f8f8f2;
+    color: #E1E8E4;
 
 }
 
+header{
+    background-color: #009C50;
+    color: #E1E8E4;
+    padding: 0, -0,0,0;
+    margin-left: -10px;
+	margin-right: 0px;
+	width: 101%;
+	position: absolute;
+	top: 0;
+
+}
+
+footer{
+	background-color: #009C50;
+	color: #E1E8E4;
+	padding-top: 2px;
+    padding-left: 5px;
+	padding-bottom: 2px;
+    margin-left: -10px;
+	margin-right: 0px;
+	margin-top: 50px;
+	width: 101%;
+	position: absolute;
+	bottom: 0;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #f8f8f2;
+    color: #E1E8E4;
     font-size: small;
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #f8f8f2;
+    color: #E1E8E4;
     font-size: small;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #f8f8f2;
+    color: #E1E8E4;
     font-size: small;
   }
 
@@ -37,7 +69,7 @@ body{
     width: 75%;
     padding: 2px 23px 2px 5px;
     outline: 0;
-    background-color: #3FA775;;
+    background-color: #3FA775;
     color: #f8f8f2;
 }
 
@@ -46,7 +78,7 @@ body{
     border-style: groove;
     border: 1px;
     background-color: #3FA775;
-    color: #f8f8f2;
+    color: #E1E8E4;
 
 }
 
@@ -54,37 +86,18 @@ body{
     border-radius: 0, 25px, 0 ,0;
     border: 1px;
     background-color: #3FA775;
-    color: #f8f8f2;
-}
-#top_bar{
-    background-color: #009C50;
-    color: #f8f8f2;
-    width: 100%;
-    padding: 0,0,0,0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-
+    color: #E1E8E4;
 }
 
 #search_element{
-    position: fixed;
-    top: 50px;
-    left: 0;
+	margin-top: 35px;
     margin-left: 8px;
     margin-right: 8px;
     background-color: #3FA775;
-    color: #f8f8f2;
+    color: #E1E8E4;
 }
 
 #radio_buttons{
-    position: fixed;
-    top: 75px;
-    left: 0;
-}
-
-#help{
-	color: #000000;
-    margin-top: 115px;
+   margin-top: 2px;
+   font-size: small;
 }
