@@ -1,11 +1,11 @@
 h1{
-    font-family: 'Cabin', sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-size: large;
     text-align: center;
 }
 
 body{
-    font-family: 'Cabin', sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     width: 250px;
     height: 100px;
     background-color: #282a36;
