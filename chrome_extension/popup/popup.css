@@ -1,13 +1,13 @@
 h1{
     font-family: Verdana, Geneva, sans-serif;
-    font-size: large;
+    font-size: small;
     text-align: center;
 }
 
 body{
     font-family: Verdana, Geneva, sans-serif;
     width: 250px;
-    height: 100px;
+    height: 50x;
     background-color: #86B59E;
     color: #f8f8f2;
 
@@ -82,4 +82,9 @@ body{
     position: fixed;
     top: 75px;
     left: 0;
+}
+
+#help{
+	color: #000000;
+    margin-top: 115px;
 }
