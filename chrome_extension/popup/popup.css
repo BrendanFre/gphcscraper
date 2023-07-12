@@ -15,6 +15,7 @@ h1 {
   font-size: small;
   text-align: center;
   margin-top: 0;
+  padding-bottom: 5px;
   padding-top: var(--vertically-spaced);
 }
 
@@ -44,11 +45,9 @@ header {
 footer {
   background-color: #009c50;
   color: #e1e8e4;
-  padding-top: var(--vertically-spaced);
-  padding-left: 5px;
-  padding-bottom: 2px;
+  padding: var(--vertically-spaced) 0 10px 1em;
   margin: 0;
-  width: 101%;
+  width: 100%;
 }
 
 ::placeholder {
@@ -70,14 +69,18 @@ footer {
   font-size: small;
 }
 
-#search_bar {
+.search-bar {
   border: none;
-  height: 20px;
-  width: 75%;
-  padding: var(--vertically-spaced) 23px 2px 5px;
+  height: 25px;
+  width: 74%;
+  margin: 0 0 0 5px;
+  border-radius: 5px 0 0 0;
+  padding: 0;
   outline: 0;
   background-color: #3fa775;
   color: #f8f8f2;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #main {
@@ -85,26 +88,31 @@ footer {
   color: #e1e8e4;
 }
 
-#submit {
-  border-radius: 0, 25px, 0, 0;
-  border: 1px;
+.submit-button {
+  height: 25px;
+  width: 20%;
+  border: none;
+  border-radius: 0 5px 0 0;
+  border-left: 9.1% solid var(--background-color);
   background-color: #3fa775;
   color: #e1e8e4;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .search_element {
   display: block;
-  margin-top: var(--vertically-spaced);
-  margin-left: 8px;
-  margin-right: 8px;
-  background-color: #3fa775;
+  margin: var(--vertically-spaced) 0;
+  background-color: var(--background-color);
   color: #e1e8e4;
 }
 
 #radio_buttons {
   margin-top: var(--vertically-spaced);
+  margin-bottom: var(--vertically-spaced);
   text-align: center;
   font-size: small;
+  height: 100%;
 }
 
 input[type="radio"] {
@@ -124,16 +132,6 @@ input[type="radio"] {
   place-content: center;
 }
 
-/* input[type="radio"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--form-control-color);
-} */
-
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
@@ -141,4 +139,8 @@ input[type="radio"]:checked::before {
 input[type="radio"]:checked {
   color: var(--primary-color);
   background-color: var(--primary-color);
+}
+
+.radio-label {
+  margin-top: -40px;
 }

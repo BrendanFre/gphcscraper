@@ -7,6 +7,7 @@ const gmc_search = "https://www.gmc-uk.org/doctors?text=";
 const england_radio = document.getElementById("gp_england");
 const wales_radio = document.getElementById("gp_wales");
 const scotland_radio = document.getElementById("gp_england");
+let website;
 
 
 gp_radio.addEventListener("click", () => {
@@ -31,10 +32,11 @@ function gp_postcode() {
 
 
 button.addEventListener("click", () => {
+    let location_type;
     for (i = 0; i < radio.length; i++) {
         if (radio[i].type = "radio") {
             if (radio[i].checked) {
-                let location_type = radio[i].value
+                location_type = radio[i].value
             }
         }
     };
@@ -43,10 +45,10 @@ button.addEventListener("click", () => {
     if (location_type == "pharmacy") {
         console.log("length of location", search_input.length);
         if (!isNaN(search_input)) {
-            const website = "https://www.pharmacyregulation.org/registers/pharmacy/registrationnumber/" + search_input;
+            website = "https://www.pharmacyregulation.org/registers/pharmacy/registrationnumber/" + search_input;
 
         } else {
-            const website = "https://www.pharmacyregulation.org/registers/pharmacy/nameortown/" + search_input;
+            website = "https://www.pharmacyregulation.org/registers/pharmacy/nameortown/" + search_input;
         }
 
         console.log("pharmacy")
