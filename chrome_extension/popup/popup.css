@@ -1,103 +1,144 @@
-h1{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: small;
-    text-align: center;
+:root {
+  --primary-color: #009c50;
+  --background-color: #01170c;
+  --vertically-spaced: 2vw;
 }
 
-h2{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: small;
-    text-align: left;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: Verdana, Geneva, sans-serif;
-    width: 275px;
-    height: 125px;
-    background-color: #86B59E;
-    color: #E1E8E4;
-
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: small;
+  text-align: center;
+  margin-top: 0;
+  padding-top: var(--vertically-spaced);
 }
 
-header{
-    background-color: #009C50;
-    color: #E1E8E4;
-    padding: 0, -0,0,0;
-    margin-left: -10px;
-	margin-right: 0px;
-	width: 101%;
-	position: absolute;
-	top: 0;
-
+h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: small;
+  text-align: center;
 }
 
-footer{
-	background-color: #009C50;
-	color: #E1E8E4;
-	padding-top: 2px;
-    padding-left: 5px;
-	padding-bottom: 2px;
-    margin-left: -10px;
-	margin-right: 0px;
-	margin-top: 50px;
-	width: 101%;
-	position: absolute;
-	bottom: 0;
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  width: 275px;
+  height: 125px;
+  background-color: var(--background-color);
+  color: #e1e8e4;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #E1E8E4;
-    font-size: small;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #E1E8E4;
-    font-size: small;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #E1E8E4;
-    font-size: small;
-  }
-
-#search_bar{
-    border: 0px;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-    height: 20px;
-    width: 75%;
-    padding: 2px 23px 2px 5px;
-    outline: 0;
-    background-color: #3FA775;
-    color: #f8f8f2;
+header {
+  display: block;
+  background-color: var(--primary-color);
+  color: #e1e8e4;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-#main{
-    border-radius: 25px;
-    border-style: groove;
-    border: 1px;
-    background-color: #3FA775;
-    color: #E1E8E4;
-
+footer {
+  background-color: #009c50;
+  color: #e1e8e4;
+  padding-top: var(--vertically-spaced);
+  padding-left: 5px;
+  padding-bottom: 2px;
+  margin: 0;
+  width: 101%;
 }
 
-#submit{
-    border-radius: 0, 25px, 0 ,0;
-    border: 1px;
-    background-color: #3FA775;
-    color: #E1E8E4;
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e1e8e4;
+  font-size: small;
+  opacity: 1; /* Firefox */
 }
 
-#search_element{
-	margin-top: 35px;
-    margin-left: 8px;
-    margin-right: 8px;
-    background-color: #3FA775;
-    color: #E1E8E4;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e1e8e4;
+  font-size: small;
 }
 
-#radio_buttons{
-   margin-top: 2px;
-   font-size: small;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #e1e8e4;
+  font-size: small;
+}
+
+#search_bar {
+  border: none;
+  height: 20px;
+  width: 75%;
+  padding: var(--vertically-spaced) 23px 2px 5px;
+  outline: 0;
+  background-color: #3fa775;
+  color: #f8f8f2;
+}
+
+#main {
+  background-color: #3fa775;
+  color: #e1e8e4;
+}
+
+#submit {
+  border-radius: 0, 25px, 0, 0;
+  border: 1px;
+  background-color: #3fa775;
+  color: #e1e8e4;
+}
+
+.search_element {
+  display: block;
+  margin-top: var(--vertically-spaced);
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #3fa775;
+  color: #e1e8e4;
+}
+
+#radio_buttons {
+  margin-top: var(--vertically-spaced);
+  text-align: center;
+  font-size: small;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  background-color: var(--background-color);
+  font: inherit;
+  color: var(--primary-color);
+  width: 1.15em;
+  height: 1.15em;
+  margin-left: 1em;
+  border: 0.15em solid var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-0.075em);
+
+  place-content: center;
+}
+
+/* input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+} */
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:checked {
+  color: var(--primary-color);
+  background-color: var(--primary-color);
 }
