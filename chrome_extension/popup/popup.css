@@ -12,7 +12,7 @@ html {
 
 h1 {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: small;
+  font-size: 14px;
   text-align: center;
   margin-top: 0;
   padding-bottom: 5px;
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
   font-family: Verdana, Geneva, sans-serif;
-  font-size: small;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -74,7 +74,8 @@ footer {
   height: 25px;
   width: 74%;
   margin: 0 0 0 5px;
-  border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
   padding: 0;
   outline: 0;
   background-color: #3fa775;
@@ -91,9 +92,11 @@ footer {
 .submit-button {
   height: 25px;
   width: 20%;
-  border: none;
-  border-radius: 0 5px 0 0;
-  border-left: 9.1% solid var(--background-color);
+  border-radius: 0 5px 5px 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1% solid var(--background-color);
   background-color: #3fa775;
   color: #e1e8e4;
   text-align: center;

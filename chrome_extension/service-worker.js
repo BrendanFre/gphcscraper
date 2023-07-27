@@ -53,7 +53,7 @@ button.addEventListener("click", () => {
 
         console.log("pharmacy")
     } else {
-        const website = gmc_search + search_input;
+        website = gmc_search + search_input;
     }
     chrome.tabs.create({
         url: website
