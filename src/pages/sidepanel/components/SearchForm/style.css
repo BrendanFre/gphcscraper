@@ -2,15 +2,30 @@
     width: 80%;
     border: 0;
     background-color: transparent;
+    padding: 5px 0;
 
 }
 
+#dataEntry:focus{
+    background-color: rgba(0 0 0 0.2);
+    border: 0;
+    outline: none;
+}
+
+
 .submitButton{
     background-color: transparent;
+    border: 0;
 }
 
 .theForm{
     margin: 5px;
     border-radius: 20px;
     background-color: aquamarine;
+}
+
+.radioButtons{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-evenly;
 }
