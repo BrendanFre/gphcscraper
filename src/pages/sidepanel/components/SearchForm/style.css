@@ -1,0 +1,16 @@
+#dataEntry{
+    width: 80%;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.submitButton{
+    background-color: transparent;
+}
+
+.theForm{
+    margin: 5px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
