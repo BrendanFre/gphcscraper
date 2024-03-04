@@ -22,10 +22,15 @@
     margin: 5px;
     border-radius: 20px;
     background-color: aquamarine;
+
 }
 
 .radioButtons{
     display: flex;
     flex-wrap: wrap;
     align-content:space-evenly;
+}
+
+.radioButtons>input{
+    width: calc(80vw/5)vw;
 }
