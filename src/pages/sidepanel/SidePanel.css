@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   padding: 0;
-  background-color: #282c34;
+  background: radial-gradient(#0f5532, #29ac6b);
   display: flex;
   justify-content: space-between;
   justify-items: space-between;
@@ -41,6 +41,7 @@
 
 .panel{
   margin: 0 20px;
+  
 }
 
 @keyframes App-logo-spin {

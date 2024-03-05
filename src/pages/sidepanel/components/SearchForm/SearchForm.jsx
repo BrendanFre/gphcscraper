@@ -3,6 +3,13 @@ import SearchBar from './SearchBar/SearchBar';
 import RadioButton from './radioButtons/RadioButton';
 
 const SearchForm = () => {
+  const handleClick = () => {
+    const gmc = document.querySelector('#radioDoctor Search GMC');
+    if (typeof gmc != 'undefined') {
+      console.log(true);
+    }
+    console.log(false);
+  };
   return (
     <form className="panel">
       <div className="radioButtons">
@@ -12,7 +19,7 @@ const SearchForm = () => {
         <RadioButton buttonName={'GP Wales'} group="searchType" />
         <RadioButton buttonName={'GP Scotland'} group="searchType" />
       </div>
-      <SearchBar />
+      <SearchBar clicker={handleClick} />
     </form>
   );
 };

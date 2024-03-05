@@ -26,6 +26,7 @@
   },
   "type": "module",
   "dependencies": {
+    "brace-expansion": "^4.0.0",
     "construct-style-sheets-polyfill": "3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -60,7 +61,7 @@
     "jsdom": "^22.1.0",
     "lint-staged": "15.2.0",
     "magic-string": "^0.30.6",
-    "npm-run-all": "4.1.5",
+    "npm-run-all": "^4.1.5",
     "prettier": "3.2.5",
     "rollup": "4.3.0",
     "sass": "1.69.5",
