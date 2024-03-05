@@ -1,17 +1,17 @@
 .App {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: center;
   height: 100%;
+  width: 100%;
   padding: 0;
   background-color: #282c34;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  justify-items: space-between;
   flex-direction: column;
+}
+
+#app-container{
+  height: 100%;
 }
 
 .App-logo {
