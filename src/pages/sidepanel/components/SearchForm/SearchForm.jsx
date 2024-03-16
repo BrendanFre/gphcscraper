@@ -2,6 +2,8 @@ import './style.css';
 import SearchBar from './SearchBar/SearchBar';
 import RadioButton from './radioButtons/RadioButton';
 
+// TODO: Fix radio buttons
+
 const SearchForm = () => {
   const handleClick = () => {
     const gmc = document.querySelector('#radioDoctor Search GMC');
