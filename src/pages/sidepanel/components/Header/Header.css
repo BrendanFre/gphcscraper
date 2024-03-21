@@ -6,6 +6,10 @@
 
 .headerSide {
   background-color: black;
+  background-image: url('./icon-128.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   color: aliceblue;
   padding: 20px 0;
   font-family: rythm, 'Courier New', Courier, monospace;

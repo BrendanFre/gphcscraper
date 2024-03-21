@@ -2,10 +2,11 @@ import SearchButton from '../SearchButton/SearchButton';
 import { PropTypes } from 'prop-types';
 
 const SearchBar = props => {
+
   return (
     <div className="theForm">
       <input type="text" name="input" id="dataEntry" />
-      <SearchButton handleClick={props.clicker} />
+      <SearchButton handleClick={props.clicker} owner={props.owner} />
     </div>
   );
 };
