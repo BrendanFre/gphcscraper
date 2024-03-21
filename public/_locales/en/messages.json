@@ -1,0 +1,10 @@
+{
+  "extensionDescription": {
+    "description": "Extension description",
+    "message": "A ETR tool for pharma products in the UK"
+  },
+  "extensionName": {
+    "description": "Extension name",
+    "message": "Entitlement to Receive Checker"
+  }
+}

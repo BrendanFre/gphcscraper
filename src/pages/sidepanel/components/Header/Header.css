@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'rythmn';
+  src: url('../../../../assets/fonts/biorhyme.ttf');
+  font-weight: 800;
+}
+
+.headerSide {
+  background-color: black;
+  color: aliceblue;
+  padding: 20px 0;
+  font-family: rythm, 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 700;
+}

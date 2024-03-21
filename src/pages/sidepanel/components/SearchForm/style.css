@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'work';
+  src: url('../../../../assets/fonts/work.ttf');
+}
+
+#dataEntry {
+  width: 80%;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 0;
+}
+
+#dataEntry:focus {
+  background-color: rgba(0 0 0 0.2);
+  border: 0;
+  outline: none;
+}
+
+.submitButton {
+  background-color: transparent;
+  border: 0;
+  font-family: work, 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: black;
+}
+
+.theForm {
+  margin: 5px;
+  border-radius: 20px;
+  background-color: aquamarine;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  flex-wrap: wrap;
+  align-content: start;
+  font-family: work, Arial, 'Courier New', Courier, monospace;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+.radioButtons > input {
+  width: calc(80vw / 5) vw;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
